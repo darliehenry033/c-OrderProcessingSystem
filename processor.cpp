@@ -103,12 +103,12 @@ try {
     continue;
 }
  if(customerMap.find(custId) == customerMap.end()){
-      cerr<< "Unknown CustomerID"<< custId << endl;
+      cerr<< "Unknown CustomerID: "<< custId << endl;
       continue;
     }
 
     if(productPrices.find(prodId) == productPrices.end()){
-  cerr<< "Unknown Produc ID"<< prodId << endl;
+  cerr<< "Unknown Produc ID: "<< prodId << endl;
   continue;
 }
 int commaCount = count(line.begin(), line.end(), ',');
